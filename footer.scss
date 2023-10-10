@@ -1,0 +1,33 @@
+footer{
+    background-color: #2e2e2e;
+    height: 100;
+    padding: 20px;
+}
+.footer-img{
+    position: relative;
+
+    width: 35%;
+    
+    // filter: invert();
+    color: #ffff;
+    margin: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    
+}
+p{margin: 2;
+font-size: 15px;}
+i{
+    font-size: 15px;
+}
+.footer-links, .footer-text, .fa-utensils, .fa-handshake-angle {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+

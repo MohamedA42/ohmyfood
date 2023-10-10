@@ -1,0 +1,237 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  padding-left: 40px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  padding-left: 10px;
+}
+
+i, a {
+  padding-left: 40px;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+.hero-img {
+  /* background-image: url("./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"); */
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  margin: 0;
+  position: relative;
+  z-index: -1;
+}
+
+.menu-wrapper {
+  background-color: #f5f5f5;
+  border-radius: 70px 70px 0px 0px;
+  width: 100%;
+  margin: 0;
+  padding-top: 50px;
+  margin-top: -200px;
+  padding-bottom: 100px;
+  display: block;
+  z-index: 0;
+}
+
+.restaurant-name {
+  font-size: 30px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  font-style: italic;
+  width: 60%;
+}
+
+.restaurant-name:before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 20px;
+  bottom: 0;
+  border-bottom: 5px solid #99E2D0;
+}
+
+.restaurant-header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.fa-heart {
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  position: relative;
+  width: 30%;
+}
+
+.course {
+  font-size: 20px;
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+  font-weight: 100;
+}
+
+.course:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 20px;
+  bottom: 0;
+  border-bottom: 5px solid #99E2D0;
+  width: 20%;
+}
+
+.fa-circle-check, .tick-box {
+  visibility: hidden;
+}
+
+.menu-text {
+  width: 200px;
+}
+
+.menu-cards {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 5px 5px 20px #d2d1d1;
+  padding: 10px;
+  margin: 20px;
+  font-size: 10px;
+  width: 85%;
+  margin-left: 5%;
+  margin-right: 0;
+  height: 100px;
+  position: relative;
+}
+
+.menu-item {
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 5%;
+}
+
+.menu-desc {
+  margin-top: 5%;
+  font-size: 12px;
+  width: 70%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu-item, .menu-desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-price {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  float: right;
+  left: 50%;
+  bottom: 20%;
+  font-size: 15px;
+  margin-bottom: 0px;
+}
+
+.menu-cards:hover {
+  border-radius: 30px, 0, 0, 30px;
+}
+.menu-cards:hover .tick-box {
+  height: 120px;
+  background-color: #99E2D0;
+  position: absolute;
+  bottom: 20px;
+  right: 0;
+  top: 0px;
+  flex-flow: nowrap;
+  border-radius: 0px 30px 30px 0px;
+  visibility: visible;
+  transition: all 0.8s ease;
+}
+.menu-cards:hover .fa-circle-check {
+  font-size: 30px;
+  color: white;
+  padding-left: 25px;
+  padding-right: 25px;
+  top: 40%;
+  position: relative;
+  visibility: visible;
+  transition: all 0.8s ease;
+}
+.menu-cards:hover .menu-price {
+  left: 20%;
+  transition: all 0.6s ease;
+}
+
+.hero-button {
+  align-items: center;
+  height: 100px;
+  background-image: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: rgba(163, 114, 227, 0.24) 0 2px 2px, rgba(160, 3, 233, 0.4) 0 8px 12px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: 0.04em;
+  line-height: 16px;
+  margin: 0;
+  padding: 30px 30px;
+  text-align: center;
+  text-decoration: none;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  align-items: center;
+  font-size: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 60%;
+  font-size: 20px;
+  height: 70px;
+}
+
+@media (min-width: 768px) {
+  .menu-price {
+    left: 5%;
+    bottom: 50%;
+  }
+  .menu-cards:hover .menu-price {
+    left: -8%;
+    transition: all 0.6s ease;
+  }
+  .menu-text {
+    width: 100%;
+  }
+  .menu-item {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .menu-desc {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+}/*# sourceMappingURL=menu.css.map */

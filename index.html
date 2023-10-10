@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/ac817a7d71.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/htmlincludejs"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./index.css">
 <title>ohmyfood</title>
 </head>
@@ -15,77 +19,105 @@
 </nav>
   
   <div class="location_banner">
-    <div class="location"><i class="fa-solid fa-location-dot"></i></div>
-    <p>paris, belville</p>
+    <div class="location"><i class="fa-solid fa-location-dot"></i>
+    <p class="banner-text">  paris, belville</p></div> 
   </div>
 
   <div class="hero-banner">
     <h2> Book the menu you like </h2>
     <p> Discover top-of-the-art restaurants we picked for you</p>
 
-    <button>Explore our restuarants</button>
+    <button class="hero-button">Explore our restuarants</button>
   </div>
 
   <div class="steps">
 
+    <h2 class="steps-title">How it works</h2>
     <div class="steps-cards">
             <p class="step-number"> 1</p>
-            <i class="fa-solid fa-mobile-screen"></i>
+            <i class="fa-solid fa-mobile-screen steps-icon"></i>
             <p class="step-text"> choose a restaurant</p> 
         </div>
     <div class="steps-cards">
             <p class="step-number"> 2</p>
-            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-list steps-icon"></i>
             <p class="step-text">Create your menu</p> 
         </div>
     <div class="steps-cards purple">
             <p class="step-number"> 3</p>
-            <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-store steps-icon"></i>
             <p class="step-text"> Go enjoy it at a restaurant</p> 
         </div>
   </div>
 
   <div class="restaurant-container">
+    <h2 class="container-title">Restaurants</h2>
+    <div class="row1">
+    <a href="./pallete.html"> 
+    <div class="restaurant-cards">
+      
+      <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="new york spot" class="card-img">
+      <p class="label">new</p>
+      <div class="row">
+        <div class="col">
+      <h2 class="step-title"> The Full Pallete</h2> 
+      <p class="step-location"> New York</p> 
+    </div>
+      <i class="fa-regular fa-heart heart-outline"></i>
+      <i class="fa-solid fa-heart hover-heart"></i>
+    </div>
+  </div>
+    </a>
+
+    <a href="./enchanted.html"> 
+    <div class="restaurant-cards">
+      
+      <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="new york spot" class="card-img">
+      <p class="label">new</p>
+      <div class="row">
+        <div class="col">
+      <h2 class="step-title"> The Enchanted Plate</h2> 
+      <p class="step-location"> New York</p> 
+    </div>
+    <i class="fa-regular fa-heart heart-outline"></i>
+    <i class="fa-solid fa-heart hover-heart"></i>
+    </div>
+    </div>
+    </a>
+  </div>
+  <div class="row1">
     <a href="./Bastille.html"> 
     <div class="restaurant-cards">
-      <p class="label">new</p>
-      <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="new york spot" class="card-img">
-      <p class="step-title"> The full pallete</p> 
-      <p class="step-location"> New York</p> 
-      <i class="fa-regular fa-heart"></i>
-    </div>
-    </a>
-
-    <a href="#"> 
-    <div class="restaurant-cards">
-      <p class="label">new</p>
-      <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="new york spot" class="card-img">
-      <p class="step-title"> The enchanted plate</p> 
-      <p class="step-location"> New York</p> 
-      <i class="fa-regular fa-heart"></i>
-    </div>
-    </a>
-    
-    <a href="#"> 
-    <div class="restaurant-cards">
-      <p class="label">new</p>
+      
       <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="new york spot" class="card-img">
-      <p class="step-title"> Bastille</p> 
+      <p class="label">new</p>
+      <div class="row">
+        <div class="col">
+      <h2 class="step-title"> Bastille</h2> 
       <p class="step-location"> New York</p> 
-      <i class="fa-regular fa-heart"></i>
+    </div>
+    <i class="fa-regular fa-heart heart-outline"></i>
+    <i class="fa-solid fa-heart hover-heart"></i>
+    </div>
     </div>
     </a>
     
-    <a href="#"> 
+    <a href="./gourmand.html"> 
     <div class="restaurant-cards">
-      <p class="label">new</p>
+      
       <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="new york spot" class="card-img">
-      <p class="step-title"> Le Gourmand</p> 
+      <p class="label">new</p>
+      <div class="row">
+        <div class="col">
+      <h2 class="step-title"> Le Gourmand</h2> 
       <p class="step-location"> New York</p> 
-      <i class="fa-regular fa-heart"></i>
+    </div>
+    <i class="fa-regular fa-heart heart-outline"></i>
+    <i class="fa-solid fa-heart hover-heart"></i>
+    </div>
     </div>
       </a>
-
+    </div>
    <include src="./footer.html"></include>
   </div>
 </body>
