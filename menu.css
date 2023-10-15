@@ -5,7 +5,7 @@ html, body {
 }
 
 h2 {
-  font-family: "Raleway", sans-serif;
+  font-family: "Shrikhand", serif;
   padding-left: 40px;
 }
 
@@ -63,17 +63,29 @@ i, a {
 }
 
 .restaurant-header {
-  display: flex;
-  flex-direction: row;
   width: 100%;
+  position: relative;
 }
 
 .fa-heart {
   font-size: 30px;
-  margin-top: auto;
-  margin-bottom: auto;
-  position: relative;
-  width: 30%;
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}
+
+.hover-heart {
+  visibility: hidden;
+  color: #9356DC;
+  z-index: 2;
+}
+
+.restaurant-header:active .heart-outline {
+  display: none;
+}
+.restaurant-header:active .hover-heart {
+  visibility: visible;
+  z-index: 2;
 }
 
 .course {
@@ -82,6 +94,7 @@ i, a {
   padding-bottom: 5px;
   position: relative;
   font-weight: 100;
+  font-family: "Roboto", sans-serif;
 }
 
 .course:before {
@@ -99,7 +112,10 @@ i, a {
 }
 
 .menu-text {
-  width: 200px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .menu-cards {
@@ -109,23 +125,24 @@ i, a {
   border-radius: 30px;
   box-shadow: 5px 5px 20px #d2d1d1;
   padding: 10px;
-  margin: 20px;
+  margin: 10px;
   font-size: 10px;
   width: 85%;
-  margin-left: 5%;
-  margin-right: 0;
-  height: 100px;
+  height: 100%;
+  display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-item {
   font-weight: 800;
   font-size: 18px;
-  margin-bottom: 5%;
+  margin-bottom: 10px;
 }
 
 .menu-desc {
-  margin-top: 5%;
+  margin-top: 10px;
   font-size: 12px;
   width: 70%;
   white-space: nowrap;
@@ -133,27 +150,23 @@ i, a {
   text-overflow: ellipsis;
 }
 
-.menu-item, .menu-desc {
-  display: flex;
-  flex-direction: column;
-}
-
 .menu-price {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  float: right;
-  left: 50%;
+  position: absolute;
+  right: 20px;
   bottom: 20%;
   font-size: 15px;
   margin-bottom: 0px;
+}
+
+.tick-box {
+  width: 0;
 }
 
 .menu-cards:hover {
   border-radius: 30px, 0, 0, 30px;
 }
 .menu-cards:hover .tick-box {
-  height: 120px;
+  height: 100%;
   background-color: #99E2D0;
   position: absolute;
   bottom: 20px;
@@ -163,6 +176,7 @@ i, a {
   border-radius: 0px 30px 30px 0px;
   visibility: visible;
   transition: all 0.8s ease;
+  width: 80px;
 }
 .menu-cards:hover .fa-circle-check {
   font-size: 30px;
@@ -175,7 +189,7 @@ i, a {
   transition: all 0.8s ease;
 }
 .menu-cards:hover .menu-price {
-  left: 20%;
+  right: 79px;
   transition: all 0.6s ease;
 }
 
@@ -216,11 +230,11 @@ i, a {
 
 @media (min-width: 768px) {
   .menu-price {
-    left: 5%;
-    bottom: 50%;
+    right: 50px;
+    bottom: 10px;
   }
   .menu-cards:hover .menu-price {
-    left: -8%;
+    right: 100px;
     transition: all 0.6s ease;
   }
   .menu-text {

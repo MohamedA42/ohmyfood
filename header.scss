@@ -7,7 +7,13 @@
     padding: 15px;
     margin: 10px;
     align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+a{
+    text-decoration: none;
 }
 .header-content{
     
@@ -16,12 +22,12 @@
     position: relative;
     margin: 0;
     width: 100%;
-   
+   top: 0;
 
     
 }
 .Logo-img{
-    width: 40%;
+    width: 30%;
     height: 70%;
     margin-left: auto;
     margin-right: auto;

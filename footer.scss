@@ -3,6 +3,10 @@ footer{
     height: 100;
     padding: 20px;
 }
+.footer-title{
+    font-family: 'Shrikhand', serif;
+    margin: 0;
+  }
 .footer-img{
     position: relative;
 
@@ -12,22 +16,32 @@ footer{
     color: #ffff;
     margin: 10px;
 }
-a{
+.footer-wrapper> a{
     color: white;
     text-decoration: none;
+    margin: 1px;
+    height: 100;
     
 }
-p{margin: 2;
+p{margin: 0;
 font-size: 15px;}
 i{
     font-size: 15px;
 }
-.footer-links, .footer-text, .fa-utensils, .fa-handshake-angle {
-    padding: 5px;
+.footer-wrapper {
     display: flex;
     flex-direction: row;
     position: relative;
     display: inline-block;
     margin: 0;
 }
-
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 0;
+}
+.footer-icons{
+    width: 30px;
+    font-size: 15px;
+}
