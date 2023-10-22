@@ -232,7 +232,6 @@ nav {
   gap: 20px;
   min-width: 200px;
   text-decoration: none;
-  overflow: hidden;
   /* width: 700px;
   max-width: 750px; */
   animation: fadeInAnimation ease 3s;
