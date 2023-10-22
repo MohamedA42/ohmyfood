@@ -5,6 +5,13 @@ html, body {
 
 .section {
   padding: 20px;
+  margin: auto;
+}
+
+.section-wrapper {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px;
 }
 
 h2 {
@@ -78,13 +85,13 @@ nav {
   font-size: 25px;
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .hero-banner > p {
   font-size: 18px;
   text-align: center;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 .hero-banner {
@@ -104,7 +111,7 @@ nav {
   cursor: pointer;
   display: flex;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   justify-content: center;
   letter-spacing: 0.04em;
   line-height: 0px;
@@ -132,6 +139,8 @@ nav {
   margin: auto;
   padding: 15px;
   display: flex;
+  flex-wrap: wrap;
+  flex: 1;
   flex-direction: column;
   gap: 20px;
   justify-content: center;
@@ -140,6 +149,7 @@ nav {
 
 .steps-title {
   font-size: 20px;
+  font-weight: 700;
 }
 
 .steps-cards {
@@ -186,6 +196,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 300;
 }
 
 .steps-cards:hover {
@@ -216,8 +227,12 @@ nav {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   padding: 20px;
+  width: 100%;
+  max-width: 450px;
   gap: 20px;
+  min-width: 200px;
   text-decoration: none;
+  overflow: hidden;
   /* width: 700px;
   max-width: 750px; */
   animation: fadeInAnimation ease 3s;
@@ -238,9 +253,18 @@ a {
 }
 
 .card-img {
+  min-width: 300px;
+  max-width: 600px;
   width: 100%;
   height: 250px;
   border-radius: 20px 20px 0px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.restaurant-cards, .card-img {
+  min-width: 300px;
+  flex: 1 1 0;
 }
 
 .label {
@@ -262,6 +286,11 @@ a {
   border-radius: 3px;
 }
 
+.restaurant-cards, .container {
+  min-width: 300px;
+  flex: 1 1 0;
+}
+
 .step-title {
   color: black;
   font-size: 22px;
@@ -277,40 +306,61 @@ a {
 }
 
 .fa-heart {
-  float: right;
   font-size: 30px;
   color: black;
-  position: relative;
-  align-items: right;
-  float: right;
-  align-content: right;
-  top: 30px;
-  height: 60px;
+  bottom: 30px;
+  right: 30px;
   z-index: 2;
-  position: relative;
+  position: absolute;
 }
 
 .hover-heart {
   visibility: hidden;
-  color: #9356DC;
-  font-size: 5px;
+  background-color: #9356DC;
+  color: transparent;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 30px;
+  color: black;
+  bottom: 30px;
+  right: 30px;
   z-index: 2;
-  position: relative;
+  position: absolute;
+  background-image: linear-gradient(45deg, #FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
 }
 
-.row:hover .heart-outline {
+.heart-button:hover .heart-outline {
   display: none;
 }
-.row:hover .hover-heart {
+.heart-button:hover .hover-heart {
   visibility: visible;
   font-size: 30px;
   z-index: 2;
-  position: relative;
+}
+
+.card-links:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.heart-button {
+  height: 100px;
+  width: 100px;
+  background: transparent;
+  border: 0;
 }
 
 .row {
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .col {
@@ -320,7 +370,8 @@ a {
 @media (min-width: 768px) {
   .restaurant-cards {
     display: flex;
-    width: 400px;
+    min-width: 300px;
+    flex: 1 1 0;
   }
   .label {
     top: 38px;

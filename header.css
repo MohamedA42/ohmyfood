@@ -1,36 +1,32 @@
 .navbar {
   width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
-.fa-arrow-left {
-  font-size: 30px;
-  color: black;
-  padding: 15px;
-  margin: 10px;
-  align-items: center;
+.header-content {
+  width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 a {
   text-decoration: none;
 }
 
-.header-content {
-  display: flex;
-  flex-direction: row;
-  position: relative;
-  margin: 0;
-  width: 100%;
-  top: 0;
+.fa-arrow-left {
+  margin: top;
+  position: absolute;
+  left: 2px;
+  top: 15px;
+  color: black;
+  font-size: 30px;
 }
 
-.Logo-img {
-  width: 30%;
-  height: 70%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 15px;
-  margin-top: 10px;
+.header-logo {
+  font-family: "Shrikhand", serif;
+  font-size: 40px;
+  margin: auto;
 }/*# sourceMappingURL=header.css.map */
