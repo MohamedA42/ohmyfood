@@ -32,8 +32,12 @@ i{
     display: flex;
     flex-direction: row;
     position: relative;
-    display: inline-block;
-    margin: 0;
+    display: block;
+  
+}
+.section-wrapper{
+    max-width: 930px;
+    margin: auto;
 }
 .footer-links{
     display: flex;

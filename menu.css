@@ -30,6 +30,8 @@ i {
   margin: 0;
   position: relative;
   z-index: -1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu-wrapper {
@@ -51,15 +53,6 @@ i {
   position: relative;
   font-style: italic;
   width: 60%;
-}
-
-.restaurant-name:before {
-  content: "";
-  position: absolute;
-  width: 20%;
-  height: 20px;
-  bottom: 0;
-  border-bottom: 5px solid #99E2D0;
 }
 
 .restaurant-header {
@@ -155,18 +148,26 @@ i {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  animation-name: menu-fade;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 .menu-item {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 23px;
   margin-bottom: 10px;
+  width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menu-desc {
   margin-top: 10px;
-  font-size: 12px;
-  width: 350px;
+  font-size: 17px;
+  width: 60%;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
@@ -174,11 +175,15 @@ i {
 }
 
 .menu-price {
-  position: absolute;
-  right: 20px;
-  bottom: 20%;
+  position: relative;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
   font-size: 15px;
   margin-bottom: 0px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .tick-box {
@@ -200,6 +205,7 @@ i {
   visibility: visible;
   transition: all 0.8s ease;
   width: 80px;
+  flex-shrink: 0;
 }
 .menu-cards:hover .fa-circle-check {
   font-size: 30px;
@@ -225,7 +231,7 @@ i {
 }
 .menu-cards:hover .menu-price {
   right: 79px;
-  transition: all 0.6s ease;
+  transition: all 0.8s ease;
 }
 
 .hero-button {
@@ -263,6 +269,16 @@ i {
   height: 70px;
 }
 
+@keyframes menu-fade {
+  0% {
+    opacity: 0;
+    transform: translate(0, 200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
 @media (min-width: 768px) {
   .menu-price {
     right: 50px;
@@ -277,14 +293,6 @@ i {
   }
   .menu-text {
     width: 100%;
-  }
-  .menu-item {
-    font-size: 30px;
-    margin-bottom: 5px;
-  }
-  .menu-desc {
-    font-size: 20px;
-    margin-top: 5px;
   }
   .menu-wrapper {
     margin-right: auto;

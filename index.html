@@ -5,9 +5,8 @@
   <script src="https://kit.fontawesome.com/ac817a7d71.js" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/htmlincludejs"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,400&family=Shrikhand&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Shrikhand&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./index.css">
 <title>ohmyfood</title>
 </head>
@@ -37,7 +36,7 @@
     <div class="steps-cards">
             <p class="step-number"> 1</p>
             <i class="fa-solid fa-mobile-screen steps-icon"></i>
-            <p class="step-text"> choose a restaurant</p> 
+            <p class="step-text"> Choose a restaurant</p> 
         </div>
     <div class="steps-cards">
             <p class="step-number"> 2</p>
@@ -52,12 +51,18 @@
   </div>
 </div>
 </section>
+
+<div class="loader">
+	<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+</div>
+
+
 <section class="section">
   <div class="section-wrapper">
   <h2 class="container-title">Restaurants</h2>
-  <div class="container">
+  <div class="card-group">
     
-    <div class="restaurant-cards">
+    <div class="restaurant-cards restaurant--fade-1">
       <a class="card-links" href="./pallete.html"> 
       <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="new york spot" class="card-img">
       <span class="label">New</span>
@@ -78,7 +83,7 @@
 
 
     
-    <div class="restaurant-cards">
+    <div class="restaurant-cards restaurant--fade-1">
       <a  class="card-links" href="./enchanted.html"> 
       <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="new york spot" class="card-img">
       <span class="label">New</span>
@@ -96,10 +101,10 @@
     </div>
     
     
-    <div class="restaurant-cards">
+    <div class="restaurant-cards restaurant--fade-2">
       <a  class="card-links" href="./Bastille.html"> 
       <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="new york spot" class="card-img">
-      <span class="label">New</span>
+      
       <div class="row">
         <div class="col">
       <h2 class="step-title"> Bastille</h2> 
@@ -115,10 +120,10 @@
     </a>
     
     
-    <div class="restaurant-cards">
+    <div class="restaurant-cards restaurant--fade-2">
       <a  class="card-links" href="./gourmand.html"> 
       <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="new york spot" class="card-img">
-      <span class="label">New</span>
+      
       <div class="row">
         <div class="col">
       <h2 class="step-title"> Le Gourmand</h2> 
