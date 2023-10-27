@@ -129,7 +129,7 @@ i {
   position: relative;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 87%;
 }
 
 .menu-cards {
@@ -160,6 +160,7 @@ i {
   font-size: 23px;
   margin-bottom: 10px;
   width: 60%;
+  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -167,7 +168,7 @@ i {
 .menu-desc {
   margin-top: 10px;
   font-size: 17px;
-  width: 60%;
+  width: 50%;
   font-weight: 300;
   white-space: nowrap;
   overflow: hidden;
