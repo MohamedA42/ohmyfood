@@ -30,7 +30,7 @@ nav {
 }
 
 .fa-arrow-left {
-  display: hidden;
+  visibility: hidden;
 }
 
 .Logo-img {
@@ -269,7 +269,7 @@ a {
   max-width: 600px;
   width: 100%;
   height: 250px;
-  border-radius: 20px 20px 0px 0px;
+  border-radius: 20px 20px 0 0;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -327,7 +327,7 @@ a {
 }
 
 .hover-heart {
-  visibility: hidden;
+  opacity: 0;
   background-color: #9356DC;
   color: transparent;
   -webkit-background-clip: text;
@@ -350,6 +350,8 @@ a {
   visibility: visible;
   font-size: 30px;
   z-index: 2;
+  opacity: 1;
+  transition: all 0.9s ease-in;
 }
 
 .card-links:after {
@@ -367,6 +369,7 @@ a {
   width: 100px;
   background: transparent;
   border: 0;
+  z-index: 1;
 }
 
 .row {
@@ -481,6 +484,7 @@ a {
   .label {
     top: 38px;
     right: 38px;
+    z-index: 1;
   }
   .container-title {
     margin: 0px;
